@@ -13,6 +13,7 @@ Nav
     align-items: center;
     padding: 1rem;
     transition: background 500ms ease;
+    text-transform: uppercase;
 }
 
 /* Closed */
@@ -72,6 +73,8 @@ Nav
     border: none;
     background: none;
     position: relative;
+    cursor: pointer;
+    outline: none;
 }
 .nav__toggle-line {
     width: 100%;
