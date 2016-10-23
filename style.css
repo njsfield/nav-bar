@@ -50,21 +50,22 @@ Nav
 }
 
 
-.nav__button-container
-.nav__toggle-container
-.nav__toggle-top-line
-.nav__toggle-middle-linke
-.nav__toggle-bottom-line
+.nav__button-container {}
+.nav__toggle-container {}
+.nav__toggle-top-line {}
+.nav__toggle-middle-line {}
+.nav__toggle-bottom-line {}
 
 /* Open */
 
-.nav--open .nav {
-
+.nav--open {
 }
 
-.nav--open .nav__logo
-.nav--open .nav__links-container
+.nav--open .nav__logo {
+
+}
+.nav--open .nav__links-container {}
 
 
-.nav--open .nav__toggle-top-line
-.nav--open .nav__toggle-bottom-line
+.nav--open .nav__toggle-top-line {}
+.nav--open .nav__toggle-bottom-line {}
