@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*
+Nav
+*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Closed */
+
+.nav--closed {
+
+}
+
+.nav--closed .nav__logo-container
+.nav--closed .nav__logo
+
+.nav--closed .nav__links-container
+.nav--closed .nav__links
+.nav--closed .nav__link
+.nav--closed .nav__link-slash
+
+
+.nav--closed .nav__button-container
+.nav--closed .nav__toggle-container
+.nav--closed .nav__toggle-top-line
+.nav--closed .nav__toggle-middle-linke
+.nav--closed .nav__toggle-bottom-line
+
+/* Open */
+
+.nav--open
+
+.nav--open .nav__logo
+.nav--open .nav__links-container
+
+
+.nav--open .nav__toggle-top-line
+.nav--open .nav__toggle-bottom-line
