@@ -6,7 +6,7 @@
   navButton.addEventListener("click", function(e){
 
     if (nav.classList.value.indexOf("nav--open") > -1) {
-      nav.className = "nav";
+      nav.classList.remove("nav--open");
     } else {
       nav.classList.add("nav--open")
     }
