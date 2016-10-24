@@ -9,9 +9,10 @@
 
 .nav {
     display: flex;
+    font-size: 1rem;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1em;
     transition: background 250ms ease;
     text-transform: uppercase;
 }
@@ -27,7 +28,7 @@
 /* Logo */
 
 .nav__logo-container {
-    font-size: 1rem;
+    font-size: 1em;
     opacity: 0;
 }
 .nav__logo {
@@ -44,15 +45,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 16rem;
+    width: 16em;
 }
 
 .nav__links {
     list-style: none;
     display: flex;
-    width: 15rem;
+    width: 15em;
     justify-content: center;
-    font-size: 1rem;
     padding: 0;
     margin: 0;
     transition: color 250ms ease;
@@ -62,7 +62,7 @@
 .nav__link {
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
-    padding: .5rem;
+    padding: .5em;
     text-decoration: none;
     color: white;
     opacity: 0;
@@ -82,8 +82,8 @@
 
 .nav__toggle-container {
     display: flex;
-    font-size: 2rem;
-    margin-left: 1rem;
+    font-size: 2em;
+    margin-left: 1em;
 }
 .nav__button {
     width: 1em;
@@ -146,11 +146,20 @@
 @media screen and (min-width: 500px) {
 
     .nav {
-        padding: 2rem;
+        padding: 2em;
     }
 
     .nav__logo-container {
         opacity: 1;
+    }
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+    .nav {
+        font-size: 1.2rem;
     }
 
 }
