@@ -63,11 +63,12 @@ Nav
 
 .nav__toggle-container {
     display: flex;
+    font-size: 2.5rem;
     margin-left: 1rem;
 }
 .nav__button {
-    width: 2.9rem;
-    height: 2.5rem;
+    width: 1em;
+    height: 1em;
     margin: 0;
     padding: 0;
     border: none;
