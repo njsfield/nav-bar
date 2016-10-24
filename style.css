@@ -32,6 +32,7 @@
 }
 .nav__logo {
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
     color: black;
     transition: color 250ms ease;
 }
@@ -56,12 +57,22 @@
     margin: 0;
     transition: color 250ms ease;
 }
+
+
 .nav__link {
     display: inline-block;
+    font-family: 'Open Sans', sans-serif;
     padding: .5rem;
     text-decoration: none;
-    color: rgba(255,255,255,0);
+    color: white;
+    opacity: 0;
 }
+
+.nav__link--grey-on-hover:hover {
+    color: rgba(255,255,255,0.5);
+}
+
+
 .nav__slash {
 
 }
@@ -116,7 +127,7 @@
 
 }
 .nav--open .nav__link {
-    color: white;
+    opacity: 1;
 }
 
 .nav--open .nav__toggle-line--top {
