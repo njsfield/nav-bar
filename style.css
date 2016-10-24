@@ -3,9 +3,9 @@
 }
 
 
-/*
-Nav
-*/
+/********
+**-Nav-**
+********/
 
 .nav {
     display: flex;
@@ -16,8 +16,14 @@ Nav
     text-transform: uppercase;
 }
 
-/* Closed */
+.nav--fixed {
+    position: fixed;
+    width: 100%;
+}
 
+/** Closed **/
+
+/* Logo */
 
 .nav__logo-container {
     font-size: 1rem;
@@ -30,7 +36,7 @@ Nav
 }
 
 
-
+/* Links */
 
 .nav__links-container {
     display: flex;
@@ -60,7 +66,7 @@ Nav
 }
 
 
-
+/* Toggle */
 
 .nav__toggle-container {
     display: flex;
@@ -86,14 +92,10 @@ Nav
     transition: all 250ms ease;
 }
 
-
-
 .nav__toggle-line--top {
     position: absolute;
     top: 0;
 }
-
-
 
 .nav__toggle-line--bottom {
     position: absolute;
@@ -102,42 +104,41 @@ Nav
 
 
 
-/* Open */
+/*** Open ***/
 
 .nav--open {
-  background: black;
+    background: black;
 }
 
 .nav--open .nav__logo {
-  color: white;
+    color: white;
 
 }
 .nav--open .nav__link {
-  color: white;
+    color: white;
 }
-
 
 .nav--open .nav__toggle-line--top {
-  top: 40%;
-  transform: rotate(45deg);
-  background: white;
+    top: 40%;
+    transform: rotate(45deg);
+    background: white;
 }
 .nav--open .nav__toggle-line--bottom {
-  bottom: 40%;
-  transform: rotate(-45deg);
-  background: white;
+    bottom: 40%;
+    transform: rotate(-45deg);
+    background: white;
 }
 
 
 
 @media screen and (min-width: 500px) {
 
-  .nav {
-    padding: 2rem;
-  }
+    .nav {
+        padding: 2rem;
+    }
 
-  .nav__logo-container {
-    opacity: 1;
-  }
+    .nav__logo-container {
+        opacity: 1;
+    }
 
 }
