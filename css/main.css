@@ -44,7 +44,7 @@ body {
 
 .nav__logo-nick {
     display: inline-block;
-    background: url(/images/site-logo.svg) 0 0;
+    background: url('../images/site-logo.png') 0 0;
     background-size: cover;
     overflow: hidden;
     width: 10rem;
@@ -54,7 +54,7 @@ body {
 
 .nav__logo-field {
     display: inline-block;
-    background: url(/images/site-logo.svg) -3.4em 0;
+    background: url('../images/site-logo.png') -3.4em 0;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -157,7 +157,7 @@ body {
 .nav__social {
     color: white;
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.7em;
     width: 1em;
     height: 1em;
     text-decoration: none;
@@ -165,25 +165,25 @@ body {
 }
 
 .nav__social--twitter{
-    background: url(/images/social-sprite.svg) 0 0;
+    background: url('../images/social-sprite.png') 0 0;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .nav__social--mail{
-    background: url(/images/social-sprite.svg) -1em 0;
+    background: url('../images/social-sprite.png') -1em 0;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .nav__social--linkedin{
-    background: url(/images/social-sprite.svg) -2em 0;
+    background: url('../images/social-sprite.png') -2em 0;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .nav__social--github{
-    background: url(/images/social-sprite.svg) -3em 0;
+    background: url('../images/social-sprite.png') -3em 0;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -248,9 +248,6 @@ body {
         font-size: 1.2rem;
     }
 
-    .nav__social {
-        font-size: 3em;
-    }
 
 }
 
@@ -293,9 +290,6 @@ body {
         display: none;
     }
 
-    .nav__social {
-        font-size: 2em;
-    }
     .nav__link:hover {
         transform-origin: 90% 30%;
     }
