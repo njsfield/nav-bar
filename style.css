@@ -29,13 +29,31 @@
 
 
 .nav__logo {
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    width: auto;
     z-index: 2;
-    color: black;
-    transition: color 250ms ease;
 }
+
+.nav__logo-nick,
+.nav__logo-field {
+    display: inline-block;
+    height: 2rem;
+}
+
+.nav__logo-nick {
+    width: 2rem;
+    background: green;
+}
+
+.nav__logo-field {
+    width: 2rem;
+    background: yellow;
+}
+
 
 /* Toggle */
 
@@ -171,6 +189,14 @@
         padding: 2em;
     }
 
+    .nav__logo-nick {
+        width: 7rem;
+    }
+
+    .nav__logo-field {
+        width: 9rem;
+    }
+
 }
 
 /** Desktop **/
@@ -185,11 +211,12 @@
 
 /** Large Desktop **/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1500px) {
+
+    /** Nav **/
 
     .nav {
         justify-content: flex-end;
-        border: 1px solid red;
         padding: 0 3rem;
     }
 
@@ -199,31 +226,13 @@
     }
 
     .nav__logo {
-        display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
         height: 100%;
-        width: auto;
-        color: white;
-        border: 1px solid blue;
     }
 
     .nav__logo-nick,
     .nav__logo-field {
-        display: inline-block;
-        border: 1px solid green;
         height: 5rem;
-    }
-
-    .nav__logo-nick {
-        width: 7rem;
-        background: green;
-    }
-
-    .nav__logo-field {
-        width: 9rem;
-        background: yellow;
     }
 
     .nav__links-container {
@@ -236,7 +245,6 @@
     .nav__link {
         text-align: right;
         padding: 3rem;
-        border: 1px solid red;
     }
 
     .nav__button {
