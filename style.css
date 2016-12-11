@@ -44,6 +44,7 @@ body {
 
 .nav__logo-nick,
 .nav__logo-field {
+    background-color: rgba(0,0,0,0);
     display: inline-block;
     height: 2em;
 }
@@ -64,6 +65,7 @@ body {
     width: 10rem;
     max-width: 3.5em;
 }
+
 
 
 /* Toggle */
@@ -98,6 +100,7 @@ body {
     position: absolute;
     bottom: 0;
 }
+
 
 
 
@@ -142,9 +145,6 @@ body {
     opacity: 1;
 }
 
-.nav__link--grey-on-hover:hover {
-    color: rgba(255,255,255,0.5);
-}
 
 /* Social */
 
@@ -194,14 +194,10 @@ body {
 }
 
 
-
-
-
 /*** Open ***/
 
 .nav--open .nav__logo {
     color: white;
-
 }
 
 .nav--open .nav__links-container {
@@ -219,6 +215,21 @@ body {
     transform: rotate(-45deg);
     background: white;
 }
+
+.nav__link:hover,
+.nav__button:hover,
+.nav__logo:hover,
+.nav__social:hover {
+    opacity: .5;
+    transform: scale(1.2);
+    transform-origin: 50% 70%;
+}
+
+.nav__link:hover {
+    transform-origin: 50% 50%;
+}
+
+
 
 
 /** Tablet **/
@@ -275,8 +286,9 @@ body {
     }
 
     .nav__link {
-        text-align: right;
         padding: 3rem;
+        text-align: right;
+        margin-left: auto;
     }
 
     .nav__button {
@@ -286,5 +298,9 @@ body {
     .nav__social {
         font-size: 2em;
     }
+    .nav__link:hover {
+        transform-origin: 90% 30%;
+    }
+}
 
 }
