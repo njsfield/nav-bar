@@ -10,6 +10,8 @@ body {
 **-Nav-**
 ********/
 
+/* General */
+
 .nav {
     display: flex;
     font-size: 1rem;
@@ -26,10 +28,8 @@ body {
     z-index: 4;
 }
 
-/** Closed **/
 
 /* Logo */
-
 
 .nav__logo {
     display: flex;
@@ -42,26 +42,24 @@ body {
     z-index: 2;
 }
 
-.nav__logo-nick,
-.nav__logo-field {
-    display: inline-block;
-    height: 2em;
-}
-
 .nav__logo-nick {
+    display: inline-block;
     background: url(/images/site-logo.svg) 0 0;
     background-size: cover;
     overflow: hidden;
     width: 10rem;
+    height: 2em;
     max-width: 3.2em;
 }
 
 .nav__logo-field {
+    display: inline-block;
     background: url(/images/site-logo.svg) -3.4em 0;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
     width: 10rem;
+    height: 2em;
     max-width: 3.5em;
 }
 
@@ -99,8 +97,6 @@ body {
     position: absolute;
     bottom: 0;
 }
-
-
 
 
 
@@ -215,6 +211,9 @@ body {
     background: white;
 }
 
+
+/*** Hover ***/
+
 .nav__link:hover,
 .nav__button:hover,
 .nav__logo:hover,
@@ -300,6 +299,4 @@ body {
     .nav__link:hover {
         transform-origin: 90% 30%;
     }
-}
-
 }
