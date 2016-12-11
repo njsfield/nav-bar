@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'futura', 'Open Sans', sans-serif;
+}
 
 /********
 **-Nav-**
@@ -31,6 +34,7 @@
 .nav__logo {
     display: flex;
     flex-direction: row;
+    font-size: 1rem;
     justify-content: flex-end;
     align-items: flex-end;
     height: 100%;
@@ -41,17 +45,24 @@
 .nav__logo-nick,
 .nav__logo-field {
     display: inline-block;
-    height: 2rem;
+    height: 2em;
 }
 
 .nav__logo-nick {
-    width: 2rem;
-    background: green;
+    background: url(site-logo.svg) 0 0;
+    background-size: cover;
+    overflow: hidden;
+    width: 10rem;
+    max-width: 3.2em;
 }
 
 .nav__logo-field {
-    width: 2rem;
-    background: yellow;
+    background: url(site-logo.svg) -3.4em 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 10rem;
+    max-width: 3.5em;
 }
 
 
@@ -125,7 +136,6 @@
 
 .nav__link {
     display: block;
-    font-family: 'Open Sans', sans-serif;
     padding: 4em;
     text-decoration: none;
     color: white;
@@ -189,14 +199,6 @@
         padding: 2em;
     }
 
-    .nav__logo-nick {
-        width: 7rem;
-    }
-
-    .nav__logo-field {
-        width: 9rem;
-    }
-
 }
 
 /** Desktop **/
@@ -217,7 +219,7 @@
 
     .nav {
         justify-content: flex-end;
-        padding: 0 3rem;
+        padding: 2rem 2.5rem;
     }
 
     .nav--fixed {
@@ -228,11 +230,7 @@
     .nav__logo {
         flex-direction: column;
         height: 100%;
-    }
-
-    .nav__logo-nick,
-    .nav__logo-field {
-        height: 5rem;
+        font-size: 2rem
     }
 
     .nav__links-container {
