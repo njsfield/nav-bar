@@ -151,6 +151,7 @@ body {
 .nav__socials {
     display: flex;
     list-style: none;
+    font-size: 1rem;
     justify-content: space-between;
     width: 100%;
     padding: 1rem;
@@ -160,7 +161,36 @@ body {
 
 .nav__social {
     color: white;
+    display: inline-block;
+    font-size: 2em;
+    width: 1em;
+    height: 1em;
     text-decoration: none;
+    overflow: hidden;
+}
+
+.nav__social--twitter{
+    background: url(social-sprite.svg) 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav__social--mail{
+    background: url(social-sprite.svg) -1em 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav__social--linkedin{
+    background: url(social-sprite.svg) -2em 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav__social--github{
+    background: url(social-sprite.svg) -3em 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -209,6 +239,10 @@ body {
         font-size: 1.2rem;
     }
 
+    .nav__social {
+        font-size: 3em;
+    }
+
 }
 
 /** Large Desktop **/
@@ -247,6 +281,10 @@ body {
 
     .nav__button {
         display: none;
+    }
+
+    .nav__social {
+        font-size: 2em;
     }
 
 }
